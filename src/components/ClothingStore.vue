@@ -7,24 +7,24 @@
 
     <section class="clothingRegister">
       <div class="subtitle">
-        <ClothingForm class="formBtn" />
+        <ClothingForm @add-clothing="addNewClothing" />
 
         <p>Total in Stock: {{ totalInStock }}</p>
       </div>
 
-      <v-simple-table dark class="table">
+      <v-simple-table dark>
         <thead>
           <tr>
-            <th class="text-left">
+            <th>
               Name
             </th>
-            <th class="text-left">
+            <th>
               Brand
             </th>
-            <th class="text-left">
+            <th>
               Price
             </th>
-            <th class="text-left">
+            <th>
               Quantity
             </th>
           </tr>
@@ -90,6 +90,13 @@ export default {
         return sum + Number(clothes.quantityInStock)
       }, 0)
     }
+  },
+  methods: {
+    addNewClothing(newClothing) {
+      this.clothing.push(newClothing)
+
+      console.log('New clothing item added:', newClothing)
+    }
   }
 }
 </script>
@@ -114,13 +121,18 @@ main {
 }
 
 .clothingRegister {
-  display: flex;
-  flex-flow: column nowrap;
   width: 60%;
+  margin-bottom: 4rem;
+
+  td {
+    text-align: start;
+  }
 
   .subtitle {
     display: flex;
     margin: 0 2rem 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
 
     p {
       font-size: 1.25rem;

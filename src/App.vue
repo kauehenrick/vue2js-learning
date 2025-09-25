@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <v-app>
     <ClothingStore title="Vue2.js Learning Store" />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -21,6 +21,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #0d1721;
 }
 </style>

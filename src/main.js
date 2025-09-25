@@ -7,6 +7,13 @@ Vue.config.productionTip = false
 
 Vue.use(Vuetify)
 
+const vuetify = new Vuetify({
+  theme: {
+    dark: true,
+  },
+})
+
 new Vue({
+  vuetify,
   render: h => h(App),
 }).$mount('#app')
