@@ -6,7 +6,6 @@
     </div>
 
     <section class="clothingRegister">
-
       <div class="subtitle">
         <ClothingForm class="formBtn" />
 
