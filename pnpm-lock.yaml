@@ -14,6 +14,9 @@ importers:
       vue:
         specifier: ^2.6.14
         version: 2.7.16
+      vuetify:
+        specifier: ^2.6.16
+        version: 2.6.16(vue@2.7.16)
     devDependencies:
       '@babel/core':
         specifier: ^7.12.16
@@ -3586,6 +3589,12 @@ packages:
   vue@2.7.16:
     resolution: {integrity: sha512-4gCtFXaAA3zYZdTp5s4Hl2sozuySsgz4jy1EnpBHNfpMa9dK1ZCG7viqBPCwXtmgc8nHqUsAu3G4gtmXkkY3Sw==}
     deprecated: Vue 2 has reached EOL and is no longer actively maintained. See https://v2.vuejs.org/eol/ for more details.
+
+  vuetify@2.6.16:
+    resolution: {integrity: sha512-3yONosmPC2rKU4sVv4zZ/OkeVRC440DRPwMgDR8JVDco34iU4+WpWe8UeaFpKMqaLaH5nCrcx9elUEvXLCJARg==}
+    deprecated: This version is deprecated
+    peerDependencies:
+      vue: ^2.6.4
 
   watchpack@2.4.4:
     resolution: {integrity: sha512-c5EGNOiyxxV5qmTtAB7rbiXxi1ooX1pQKMLX/MIabJjRA0SJBQOjKF+KSVfHkr9U1cADPon0mRiVe/riyaiDUA==}
@@ -7727,6 +7736,10 @@ snapshots:
     dependencies:
       '@vue/compiler-sfc': 2.7.16
       csstype: 3.1.3
+
+  vuetify@2.6.16(vue@2.7.16):
+    dependencies:
+      vue: 2.7.16
 
   watchpack@2.4.4:
     dependencies:
